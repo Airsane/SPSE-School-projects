@@ -10,9 +10,12 @@
     width: 62em;
 }
 
-
 .clicked{
     background-color:  #FFAAAA !important;
+}
+
+.text-center{
+    overflow: hidden;
 }
 
  div table tr {
