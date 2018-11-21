@@ -9,7 +9,7 @@
     <?
     $rozvrh_raw = file_get_contents('tridy.json');
     $rozvrhJson = json_decode($rozvrh_raw);
-
+    $dny = ["Po","Út","St","Čt","Pá"];
     ?>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -69,9 +69,9 @@
                         <th>12.<div>17:45~18:30</div>
                         </th>
                     </tr>
-                    <?php foreach($trida2->items as $items) : ?>
+                    <?php foreach($trida2->items as $ree=>$items) : ?>
                     <tr>
-                        <td class="day">Po</td>
+                        <td class="day"><?=$dny[$ree]?></td>
                         <?php for($i=0; $i < 13; $i++) : ?>
                         <? if(isset($items->{$i})) {?>
                         <td class="hourName">
