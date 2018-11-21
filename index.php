@@ -10,7 +10,7 @@ $folderManager->nacti();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Rozcesník</title>
+    <title>Rozcestník</title>
     <link rel="stylesheet" href="./res/css/bootstrap.min.css">
     <link rel="stylesheet" href="./res/css/style.css">
     <script src="./res/js/jquery-3.3.1.slim.min.js"></script>

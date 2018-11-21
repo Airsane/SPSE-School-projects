@@ -9,7 +9,7 @@
     <?
     $rozvrh_raw = file_get_contents('tridy.json');
     $rozvrhJson = json_decode($rozvrh_raw);
-    $dny = ["Po","Út","St","Čt","Pá"];
+    $dny = ["Po", "Út", "St", "Čt", "Pá"];
     ?>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -20,12 +20,12 @@
         <div class="text-center">
             <h1>Rozvrh</h1>
             <div class="row">
-                <?php foreach ($rozvrhJson as $kys =>$trida) :?>
-                <?php foreach($trida as $key => $trida2) :?>
+                <?php foreach ($rozvrhJson as $kys => $trida) : ?>
+                <?php foreach ($trida as $key => $trida2) : ?>
                 <div class="col-md-12">
                 <div class="text-center">
                 <h2>
-                    <?= $key?>
+                    <?= $key ?>
                 </h2>
                 <table cellpadding="0" cellspacing="0">
                     <tr>
@@ -69,28 +69,30 @@
                         <th>12.<div>17:45~18:30</div>
                         </th>
                     </tr>
-                    <?php foreach($trida2->items as $ree=>$items) : ?>
+                    <?php foreach ($trida2->items as $ree => $items) : ?>
                     <tr>
-                        <td class="day"><?=$dny[$ree]?></td>
-                        <?php for($i=0; $i < 13; $i++) : ?>
-                        <? if(isset($items->{$i})) {?>
+                        <td class="day"><?= $dny[$ree] ?></td>
+                        <?php for ($i = 0; $i < 13; $i++) : ?>
+                        <? if (isset($items->{$i})) { ?>
                         <td class="hourName">
                             <div class="sbj">
                                 <div class="top"><a href="#"><span>
-                                            <?=$items->{$i}[0]->subject?></span></a></div>
+                                            <?= $items->{$i}[0]->subject ?></span></a></div>
                                 <div class="bottom"><a href="#"><span>
-                                            <?=$items->{$i}[0]->cls?>&nbsp;</span></a><a href="#"><span>
-                                            <?=$items->{$i}[0]->teacher?></span></a></div>
+                                            <?= $items->{$i}[0]->cls ?>&nbsp;</span></a><a href="#"><span>
+                                            <?= $items->{$i}[0]->teacher ?></span></a></div>
                             </div>
                         </td>
-                        <? }  else {?>
+                        <?
+                    } else { ?>
                         <td class="hourName">
                             <div class="sbj">
                                 <div class="top"></div>
                                 <div class="bottom"></div>
                             </div>
                         </td>
-                        <? }?>
+                        <?
+                    } ?>
                         <? endfor ?>
                     </tr>
                     <? endforeach ?>
