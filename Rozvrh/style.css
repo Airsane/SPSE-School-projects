@@ -1,0 +1,196 @@
+ div {
+    overflow: auto;
+}
+
+ div table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    height: 21em;
+    width: 62em;
+}
+
+
+.clicked{
+    background-color:  #FFAAAA !important;
+}
+
+ div table tr {
+    min-height: 45px
+}
+
+ div table tr th,
+ div table tr td {
+    border-bottom: solid 1px #4F575E;
+    background-color: rgba(0,0,0,.03);
+    box-sizing: border-box;
+    width: 45px;
+    text-align: center;
+    border-left: 1px solid #4F575E;
+}
+
+td:hover{
+    transition: .3s;
+    background-color: rgba(0,0,0,.1);
+}
+
+ div table tr th {
+    color: aliceblue;
+    background-color: #222C2C;
+    padding: 5px 2px;
+    box-sizing: border-box
+}
+
+ div table tr th div {
+    font-size: 8px
+}
+
+ div table tr .day {
+    background-color: #222C2C;
+    color: whitesmoke;
+    border: 0;
+    min-width: 25px
+}
+
+ div table tr .hourName {
+    font-size: 13px;
+    text-align: center
+}
+
+ div table tr .hourName .sbj {
+    padding-top: 4px;
+    min-height: 35px
+}
+
+ div table tr .hourName .sbj em {
+    font-size: 11px
+}
+
+ div table tr .hourName .sbj .top span {
+    font-size: 14px;
+    font-weight: bold;
+    color: black
+}
+
+ div table tr .hourName .sbj .bottom {
+    font-size: 10px;
+    padding: 1px;
+    border-bottom: 1px solid #a9daf9
+}
+
+ div table tr .hourName .sbj a {
+    text-decoration: none;
+    color: inherit
+}
+
+ div table tr .hourName .sbj a:hover {
+    color: #2b86f0;
+    text-decoration: underline
+}
+
+ div table tr .hourName .sbj:last-child .bottom {
+    border: 0
+}
+
+ div table tr .hourName .change {
+    border-bottom: 2px solid #6C747C;
+    background-color: #9fe2fa
+}
+
+ div table tr:first-child td,
+ div table tr:first-child th {
+    background-color: #343a40!important
+}
+
+ div h2 {
+    display: block;
+    box-sizing: border-box;
+}
+
+ div form {
+    margin-bottom: 8px;
+    margin-top: 35px;
+    float: left;
+    position: absolute;
+    overflow: auto;
+    display: block
+}
+
+ div form input {
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    width: 30%;
+    width: calc(50% - 14px);
+    display: block;
+    background-color: #daeefc;
+    border: 0;
+    box-shadow: inset 0 0 3px #8ed0fc;
+    float: left;
+    margin: 0 4px
+}
+
+ div form input[type=submit] {
+    text-align: center;
+    cursor: pointer
+}
+
+ div .prispevek {
+    display: block;
+    overflow: auto;
+    background-color: #c8e8fe;
+    border: 1px solid #98d2fa;
+    border-bottom: 0
+}
+
+ div .prispevek>span {
+    display: block;
+    float: left;
+    padding: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: calc(100% - 140px)
+}
+
+ div .prispevek>span p {
+    margin: 0
+}
+
+ div .prispevek span>div:first-child {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: 1px solid #98d2fa;
+    padding-top: 2px;
+    width: 100px
+}
+
+ div .prispevek span>div:nth-child(2) {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    border-right: 1px solid #98d2fa;
+    width: 100px
+}
+
+ div .prispevek:last-child {
+    border-bottom: 1px solid #98d2fa
+}
+
+@media only screen and (min-width:420px) and (max-width:768px) {
+    form {
+        width: calc(100% - 80px)
+    }
+}
+
+@media only screen and (min-width:769px) {
+     div .subject .grade {
+        width: 50px
+    }
+
+     div form input,
+     div form submit {
+        max-width: 150px
+    }
+}

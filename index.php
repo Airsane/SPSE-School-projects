@@ -4,6 +4,7 @@
 require_once('soubory.php');
 $folderManager = new Slozky('.');
 $folderManager->nacti();
+
 ?>
 
 <head>
