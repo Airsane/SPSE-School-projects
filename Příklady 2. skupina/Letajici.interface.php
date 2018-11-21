@@ -1,0 +1,6 @@
+<?
+interface ILetajici
+{
+	function let();
+}
+?>

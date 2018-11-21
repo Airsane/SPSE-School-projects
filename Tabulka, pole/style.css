@@ -1,0 +1,19 @@
+table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    font-size: 25px;
+    width: calc(25% - 50px);
+    float: left;
+    margin: 5px;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.089); 
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
