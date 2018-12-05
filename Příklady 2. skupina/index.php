@@ -76,7 +76,7 @@ require_once('Autobus.class.php');
                         <h2>Seřazení funkce</h2>
                     </div>
                     <div class="card-text">
-                        <?= var_dump(fc1(false, $pole)) ?>
+                        <?= var_dump(fc1(true, $pole)) ?>
                     </div>
                 </div>
             </div>

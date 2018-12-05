@@ -1,17 +1,14 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-body
-{
+body {
     background-color: orange;
 }
 
-header
-{
+header {
     background-color: black;
     padding: 20px;
     color: aliceblue;
@@ -20,35 +17,31 @@ header
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-section
-{
-    background-color: rgba(0,0,0,.03);
+section {
+    background-color: rgba(0, 0, 0, .03);
     width: calc(25% - 10px);
-    float:  left;
+    float: left;
     margin: 5px;
     padding: 20px;
     color: black;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
 }
 
-section:hover
-{
+section:hover {
     transition: .3s;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
     cursor: pointer;
 }
 
-section a 
-{
+section a {
     text-decoration-line: none;
     color: aliceblue;
     padding: 20px;
     user-select: none;
 }
 
-article p
-{
+article p {
     color: black;
     font-size: 25px;
     width: calc(25% - 50px);
@@ -59,39 +52,34 @@ article p
     background-color: rgba(0, 0, 0, 0.089);
 }
 
-article
-{
+article {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.galerie 
-{
+.galerie {
     position: relative;
     width: 100%;
     margin: 0 auto;
     overflow: auto;
 }
 
-.galerie h1
-{
+.galerie h1 {
     margin: auto;
     text-align: center;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.galerie img
-{
+.galerie img {
     width: calc(17% - 5px);
     text-align: center;
-    float: left;   
-    padding: 5px;    
+    float: left;
+    padding: 5px;
 }
 
-.galerie img:hover
-{
+.galerie img:hover {
     cursor: pointer;
 }
 
@@ -105,7 +93,7 @@ article
     display: none;
 }
 
-#lightbox-img{
+#lightbox-img {
     width: 100%;
 }
 
@@ -152,8 +140,7 @@ article
     z-index: 1102;
 }
 
-footer
-{
+footer {
     position: fixed;
     bottom: 0px;
     background-color: black;

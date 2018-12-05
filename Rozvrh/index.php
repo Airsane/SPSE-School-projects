@@ -76,11 +76,11 @@
                         <? if (isset($items->{$i})) { ?>
                         <td class="hourName">
                             <div class="sbj">
-                                <div class="top"><a href="#"><span>
-                                            <?= $items->{$i}[0]->subject ?></span></a></div>
-                                <div class="bottom"><a href="#"><span>
-                                            <?= $items->{$i}[0]->cls ?>&nbsp;</span></a><a href="#"><span>
-                                            <?= $items->{$i}[0]->teacher ?></span></a></div>
+                                <div class="top"><span>
+                                            <?= $items->{$i}[0]->subject ?></span></div>
+                                <div class="bottom"><span>
+                                            <?= $items->{$i}[0]->cls ?>&nbsp;</span><span>
+                                            <?= $items->{$i}[0]->teacher ?></span></div>
                             </div>
                         </td>
                         <?
