@@ -1,5 +1,4 @@
 <?php
-
 require('Pizza.class.php');
 
 class Kosik implements Iterator{
@@ -53,5 +52,9 @@ class Kosik implements Iterator{
         return isset($this->obsah[$this->position]);
     }
 }
+
+
+
+if (isset($_POST['gender'])){if($_POST["gender"]=="M"){echo "<p>muž</p>";}}
 
 ?>

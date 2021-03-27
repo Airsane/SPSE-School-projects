@@ -2,9 +2,7 @@
 
 function datumDb($datum)
 {
-    //převedení českého datumu na databázový
     return date('Y-m-d', strtotime($datum));
-
 }
 
 function RCdatum($rc)

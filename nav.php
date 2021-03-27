@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../res/css/bootstrap.min.css">
 <link rel="stylesheet" href="../res/css/style.css">
+<link rel="stylesheet" href="../res/fontawesome/css/all.css" crossorigin="anonymous">
 <script src="../res/js/jquery-3.3.1.slim.min.js"></script>
 <script src="../res/js/popper.min.js"></script>
 <script src="../res/js/bootstrap.min.js"></script>

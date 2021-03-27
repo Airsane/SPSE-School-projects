@@ -20,7 +20,7 @@ class Slozky
 
             }
         }
-        usort($this->soubory, 'strcoll'); 
+        usort($this->soubory, 'strcoll');
     }
 
     public function vypis()
